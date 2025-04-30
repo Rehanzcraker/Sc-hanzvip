@@ -314,8 +314,8 @@ CHATID="5289385265"
 KEY="6525206851:AAEK0Wcrr86LiFOe8M0E4Vn9xH0qIPN8rqE"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 restart_system() {
-    USRSC=$(wget -qO- https://raw.githubusercontent.com/nixyproject-cfd/vip/main/izin | grep $ipsaya | awk '{print $2}')
-    EXPSC=$(wget -qO- https://raw.githubusercontent.com/nixyproject-cfd/vip/main/izin | grep $ipsaya | awk '{print $3}')
+    USRSC=$(wget -qO- https://raw.githubusercontent.com/Rehanzcraker/Sc-hanzvip/main/izin | grep $ipsaya | awk '{print $2}')
+    EXPSC=$(wget -qO- https://raw.githubusercontent.com/Rehanzcraker/Sc-hanzvip/main/izin | grep $ipsaya | awk '{print $3}')
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
 <code>────────────────────</code>
@@ -535,7 +535,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service Limit Quota"
-wget raw.githubusercontent.com/nixyproject-cfd/vip/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
+wget raw.githubusercontent.com/Rehanzcraker/Sc-hanzvip/main/limit/limit.sh && chmod +x limit.sh && ./limit.sh
 
 cd
 wget -q -O /usr/bin/limit-ip "${REPO}limit/limit-ip"
